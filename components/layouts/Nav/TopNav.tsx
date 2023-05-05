@@ -1,7 +1,7 @@
 import React from 'react'
 import Nav from './Nav'
 import logo from '../../../public/logo.png'
-import Image from 'next/Image'
+import Image from 'next/image'
 
 
 const TopNav = () => {

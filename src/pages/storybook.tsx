@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from 'next/Image'
+import Image from 'next/image'
 import logo from '../../public/logo (1).png'
 import Nav from 'components/layouts/Nav/Nav'
 import TopNav from 'components/layouts/Nav/TopNav'

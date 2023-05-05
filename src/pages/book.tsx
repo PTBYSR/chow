@@ -4,7 +4,7 @@ import { Main } from "@/templates/Main";
 import Text from "components/ui/Text/Text";
 import Button from "components/ui/Button/Button";
 import InstagramIcon from "components/icons/InstagramIcon";
-import Image from 'next/Image'
+import Image from 'next/image'
 import bookImg from '../../public/book-now-img.jpg'
 
 

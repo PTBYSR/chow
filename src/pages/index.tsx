@@ -4,7 +4,7 @@ import { Main } from "@/templates/Main";
 import Text from "components/ui/Text/Text";
 import Button from "components/ui/Button/Button";
 import HalfCircleDisplay from "components/interface/HalfCircleDisplay/HalfCircleDisplay";
-import Image from "next/Image";
+import Image from "next/image";
 import banner from "../../public/banner.png";
 import landingImg from "../../public/landing-img.png";
 import banner1Img from "../../public/banner1-img.png";

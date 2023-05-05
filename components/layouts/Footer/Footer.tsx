@@ -1,8 +1,8 @@
-import Image from "next/Image";
+import Image from "next/image";
 import React, { useState } from "react";
 import footerBar from "../../../public/footer-bar.png";
 import { navUtils } from "../Nav/Nav.utils";
-import Link from "next/Link";
+import Link from "next/link";
 import InstagramIcon from "components/icons/InstagramIcon";
 import ArrowIcon from "components/icons/ArrowIcon";
 import IGarrow from "../../../public/IGarrow.png";
