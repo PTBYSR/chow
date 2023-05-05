@@ -9,6 +9,7 @@ class MyDocument extends Document {
     return (
       <Html lang={AppConfig.locale}>
         <Head>
+          
           <script
             dangerouslySetInnerHTML={{
               __html: `
