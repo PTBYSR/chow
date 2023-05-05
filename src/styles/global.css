@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: "Dela Gothic One";
+  font-family: "Lexend Deca";
 }
 
 .badge-spin {
@@ -24,9 +24,9 @@ body {
   }
 }
 
-/* .lexend {
+.lexend {
   font-family: "Lexend Deca";
-} */
+}
 
 .instagram-footer-banner {
   left: calc(50% - 64px);

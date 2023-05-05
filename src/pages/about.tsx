@@ -20,15 +20,29 @@ const About = () => {
           </Text>
         </div>
         <div className="flex center-all">
-          <div className="border w-[400px] h-[400px]"></div>
+          <div className="relative border w-[400px] h-[400px] overflow-hidden">
+            <div className="absolute -bottom-[200px]">
+              <video
+                src="https://firebasestorage.googleapis.com/v0/b/chow-56e70.appspot.com/o/about-us-vid.mp4?alt=media&token=84cfb517-d1fe-45c5-aada-6d38f5402e19"
+                loop
+                autoPlay
+                muted
+              ></video>
+            </div>
+          </div>
         </div>
         <div className="flex center-all text-center mt-10">
           <div className=" md:w-1/2">
             <Text variant="p">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi
-              tempore dolores ad modi reprehenderit, placeat officiis iusto
-              enim? Quo ipsa nemo laboriosam? Earum vero officia exercitationem
-              dolorum obcaecati sit nihil?
+              Welcome to 500Chow, where we deliver restaurant-quality meals
+              straight to your doorstep. With a menu featuring a variety of
+              cuisines, from Italian to Mexican to Asian and American, we've got
+              something for everyone. Our easy-to-use website and dedicated team
+              ensure fast and reliable service every time. Our passion for food
+              is evident in every detail, from the quality of our ingredients to
+              the presentation of our dishes. Order now and experience the
+              convenience and deliciousness of 500Chow - we're confident you'll
+              love our food and our service.
             </Text>
           </div>
         </div>

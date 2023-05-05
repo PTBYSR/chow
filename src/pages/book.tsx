@@ -32,8 +32,8 @@ const Book = () => {
             <Text variant="h4">Order our food on our platforms...</Text>
           </div>
           <div className="mt-10 flex gap-3 flex-col md:w-2/3">
-            <Button>order on whatsapp</Button>
-            <Button>
+            <Button href="https://api.whatsapp.com/message/L4SBDA7TOZ6FL1?autoload=1&app_absent=0">order on whatsapp</Button>
+            <Button href="https://www.instagram.com/500chow/">
               order on instagram
               <span>
                 <InstagramIcon w="26" fill="#fff" />

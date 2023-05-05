@@ -26,13 +26,13 @@ const Menu = () => {
     </div>
     <div className="mb-32 py-32 flex gap-5 flex-col md:w-1/2">
       <Text variant="h3">Didn't see what you wanted? Talk to us</Text>
-      <Button>chat with us on whatsapp</Button>
-            <Button>
-              chat with us on instagram
+      <Button href="https://api.whatsapp.com/message/L4SBDA7TOZ6FL1?autoload=1&app_absent=0">order on whatsapp</Button>
+            <Button href="https://www.instagram.com/500chow/">
+              order on instagram
               <span>
                 <InstagramIcon w="26" fill="#fff" />
               </span>
-            </Button>
+              </Button>
     </div>
   
   </Main>
