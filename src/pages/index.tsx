@@ -59,7 +59,7 @@ const Index = () => {
       </header>
 
       <div>
-        <h2 className="text-white text-2xl text-center mb-12">We bring you a rich menu of wholesome, exciting and tasty food </h2>
+        <h2 className="text-white text-2xl text-center mb-28">We bring you a rich menu of wholesome, exciting and tasty food </h2>
         <VidCarousel />
       </div>
 
