@@ -13,7 +13,7 @@ const About = () => {
         />
       }
     >
-      <section className="mt-28 mb-28">
+      <section className="mt-28 mb-24 relative z-[10000]">
         <div className="text-center mb-20">
           <Text variant="h2">
             This is a story about <br /> 500 CHOPS
@@ -47,7 +47,7 @@ const About = () => {
           </div>
         </div>
       </section>
-      <section className="mb-64">
+      <section className="mb-64 relative z-[10000]">
         <div className="text-center mb-20">
           <Text variant="h2">The best of services</Text>
         </div>

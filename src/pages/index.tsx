@@ -14,6 +14,8 @@ import TimeBadge from "components/icons/TimeBadge";
 import timeBadge from "../../public/time-badge.png";
 import Marquee from "react-fast-marquee";
 import VidCarousel from "components/interface/VidCarousel/VidCarousel";
+import wrapper from '../../public/wrapper.png'
+
 
 const Index = () => {
   return (
@@ -25,6 +27,7 @@ const Index = () => {
         />
       }
     >
+      
       <header className="md:mb-32 mb-28 flex md:flex-row flex-col">
         <div className="md:w-1/2 flex justify-center pt-16 relative">
           {/* <div className=" w-[450px] h-[520px] rounded-3xl">
@@ -38,7 +41,7 @@ const Index = () => {
           </div>
         </div>
 
-        <div className="md:w-1/2 md:pl-8 pt-16 ">
+        <div className="md:w-1/2 md:pl-8 pt-16 z-[100] ">
           <Text className="lexend" variant="h1">
             The <br /> food <br /> bangs
           </Text>
@@ -58,8 +61,8 @@ const Index = () => {
         </div>
       </header>
 
-      <div>
-        <h2 className="text-white text-2xl text-center mb-28">We bring you a rich menu of wholesome, exciting and tasty food </h2>
+      <div className="relative z-[10000]">
+        <h2 className=" z-[1000] text-white text-2xl text-center mb-28">We bring you a rich menu of wholesome, exciting and tasty food </h2>
         <VidCarousel />
       </div>
 
@@ -90,7 +93,7 @@ const Index = () => {
         </div>
       </section> */}
 
-      <section className="h-[80vh] md:h-auto center-all md:flex-row flex-col flex mt-14 mb-24 gap-10">
+      <section className="relative z-[10000] h-[80vh] md:h-auto center-all md:flex-row flex-col flex mt-14 mb-24 gap-10">
         <div className="md:w-1/2  flex justify-start">
           {/* <div className=" w-[400px] h-[350px] rounded-3xl"></div> */}
           <div className="md:w-[90%]">
@@ -113,7 +116,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="md:flex-row flex-col relative gap-10 flex mb-64 md:mb-56 p-5">
+      <section className="relative z-[10000] md:flex-row flex-col relative gap-10 flex mb-64 md:mb-56 p-5">
         {/* <div className="absolute w-[900vw] -top-[70px] -left-[140px] rotate-2">
           <Image src={banner} />
         </div> */}

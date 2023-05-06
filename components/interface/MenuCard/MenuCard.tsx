@@ -9,7 +9,7 @@ const MenuCard = ({ label, items, variant = "left" }) => {
   return (
     <div
       className={clsx(
-        " mt-20 flex md:h-[700px]",
+        " mt-20 flex md:h-[700px] relative",
         variant === "left" && ["md:justify-start"],
         variant === "right" && ["md:justify-end"]
       )}

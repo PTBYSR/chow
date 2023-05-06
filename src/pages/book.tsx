@@ -15,7 +15,7 @@ const Book = () => {
         <Meta title="500 CHOW - Order" description="1# Lagos food delivery service" />
       }
     >
-      <header className="md:mt-28 mt-[400px] gap-10 flex mb-72 flex-col-reverse md:flex-row h-[70vh]">
+      <header className="relative z-[10000] md:mt-28 mt-[400px] gap-10 flex mb-72 flex-col-reverse md:flex-row h-[70vh]">
         <div className="md:w-1/2  flex md:items-center">
           <div className="rounded-3xl md:w-[80%] overflow-hidden">
             <Image src={bookImg} />
