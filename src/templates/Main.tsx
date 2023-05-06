@@ -9,7 +9,7 @@ type IMainProps = {
 };
 
 const Main = (props: IMainProps) => (
-  <div className="bg-red overflow-hidden">
+  <div className="bg-red overflow-hidden relative">
     <div className="mx-auto w-[90%]  md:w-[80%]">
       <div className="flex center-all">
         <TopNav />

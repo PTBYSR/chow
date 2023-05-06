@@ -21,7 +21,7 @@ const About = () => {
         </div>
         <div className="flex center-all">
           <div className="relative border w-[400px] h-[400px] overflow-hidden">
-            <div className="absolute -bottom-[200px]">
+            <div className="absolute md:-bottom-[200px] -bottom-[190px]">
               <video
                 src="https://firebasestorage.googleapis.com/v0/b/chow-56e70.appspot.com/o/about-us-vid.mp4?alt=media&token=84cfb517-d1fe-45c5-aada-6d38f5402e19"
                 loop
@@ -31,7 +31,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="flex center-all text-center mt-10">
+        <div className="flex center-all md:text-center mt-10">
           <div className=" md:w-1/2">
             <Text variant="p">
               Welcome to 500Chow, where we deliver restaurant-quality meals

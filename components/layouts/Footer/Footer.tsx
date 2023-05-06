@@ -5,7 +5,7 @@ import { navUtils } from "../Nav/Nav.utils";
 import Link from "next/link";
 import InstagramIcon from "components/icons/InstagramIcon";
 import ArrowIcon from "components/icons/ArrowIcon";
-import IGarrow from "../../../public/IGarrow.png";
+import IGarrow from "../../../public/IGarrow.svg";
 import Text from "components/ui/Text/Text";
 import WhatsappIcon from "components/icons/WhatsappIcon";
 const Footer = () => {
