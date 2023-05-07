@@ -27,7 +27,24 @@ const Index = () => {
         />
       }
     >
-      
+      <div className="md:hidden  absolute top-0 left-0 opacity">
+        <Image src={wrapper} />
+        <Image src={wrapper} />
+        <Image src={wrapper} />
+        <Image src={wrapper} />
+        <Image src={wrapper} />
+        <Image src={wrapper} />
+        <Image src={wrapper} />
+        <Image src={wrapper} />
+        <Image src={wrapper} />
+        <Image src={wrapper} />
+        <Image src={wrapper} />
+        <Image src={wrapper} />
+        <Image src={wrapper} />
+        <Image src={wrapper} />
+        <Image src={wrapper} />
+        
+      </div>
       <header className="md:mb-32 mb-28 flex md:flex-row flex-col">
         <div className="md:w-1/2 flex justify-center pt-16 relative">
           {/* <div className=" w-[450px] h-[520px] rounded-3xl">

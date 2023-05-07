@@ -2,6 +2,8 @@ import React from "react";
 import { Meta } from "@/layouts/Meta";
 import { Main } from "@/templates/Main";
 import Text from "components/ui/Text/Text";
+import Image from "next/image";
+import wrapper from '../../public/wrapper.png'
 
 const About = () => {
   return (
@@ -13,6 +15,21 @@ const About = () => {
         />
       }
     >
+       <div className="md:hidden  absolute top-0 left-0 opacity">
+        <Image src={wrapper} />
+        <Image src={wrapper} />
+        <Image src={wrapper} />
+        <Image src={wrapper} />
+        <Image src={wrapper} />
+        <Image src={wrapper} />
+        <Image src={wrapper} />
+        <Image src={wrapper} />
+        <Image src={wrapper} />
+        <Image src={wrapper} />
+        <Image src={wrapper} />
+        <Image src={wrapper} />
+        <Image src={wrapper} />
+        </div>
       <section className="mt-28 mb-24 relative z-[10000]">
         <div className="text-center mb-20">
           <Text variant="h2">

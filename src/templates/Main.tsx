@@ -13,11 +13,12 @@ type IMainProps = {
 const Main = (props: IMainProps) => (
   <div className="bg-red overflow-hidden relative">
     <div className="mx-auto w-[90%]  md:w-[80%]">
-    <div className="absolute top-0 left-0 opacity">
+    <div className="md:block hidden absolute top-0 left-0 opacity">
         <Image src={wrapper} />
         <Image src={wrapper} />
         <Image src={wrapper} />
         <Image src={wrapper} />
+        
       </div>
       <div className="flex center-all">
         <TopNav />
