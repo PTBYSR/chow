@@ -16,6 +16,7 @@ const About = () => {
       }
     >
        <div className="md:hidden  absolute top-0 left-0 opacity">
+        {/* <Image src={wrapper} />
         <Image src={wrapper} />
         <Image src={wrapper} />
         <Image src={wrapper} />
@@ -28,7 +29,7 @@ const About = () => {
         <Image src={wrapper} />
         <Image src={wrapper} />
         <Image src={wrapper} />
-        <Image src={wrapper} />
+        <Image src={wrapper} /> */}
         </div>
       <section className="mt-28 mb-24 relative z-[10000]">
         <div className="text-center mb-20">

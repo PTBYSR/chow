@@ -16,18 +16,18 @@ const Book = () => {
       }
     >
       <div className="md:hidden  absolute top-0 left-0 opacity">
+        {/* <Image src={wrapper} />
         <Image src={wrapper} />
         <Image src={wrapper} />
         <Image src={wrapper} />
         <Image src={wrapper} />
         <Image src={wrapper} />
-        <Image src={wrapper} />
-        <Image src={wrapper} />
+        <Image src={wrapper} /> */}
         </div>
       <header className="relative z-[10000] md:mt-28 mt-[400px] gap-10 flex mb-72 flex-col-reverse md:flex-row h-[70vh]">
         <div className="md:w-1/2  flex md:items-center">
           <div className="rounded-3xl md:w-[80%] overflow-hidden">
-            <Image src={bookImg} />
+            <Image src={bookImg} priority/>
           </div>
         </div>
         <div className="md:w-1/2  flex justify-center flex-col">

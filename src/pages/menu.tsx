@@ -10,7 +10,6 @@ import InstagramIcon from 'components/icons/InstagramIcon';
 import Image from 'next/image';
 import wrapper from '../../public/wrapper.png'
 const Menu = () => {
-  console.log(riceUtils)
   return (
     <Main
     meta={
@@ -18,6 +17,7 @@ const Menu = () => {
     }
   >
     <div className="md:hidden  absolute top-0 left-0 opacity">
+        {/* <Image src={wrapper} />
         <Image src={wrapper} />
         <Image src={wrapper} />
         <Image src={wrapper} />
@@ -27,8 +27,7 @@ const Menu = () => {
         <Image src={wrapper} />
         <Image src={wrapper} />
         <Image src={wrapper} />
-        <Image src={wrapper} />
-        <Image src={wrapper} />
+        <Image src={wrapper} /> */}
       </div>
     <MenuCard items={mealsUtils} label="meals" variant='left'/>
     <MenuCard items={riceUtils} label="rice" variant='left'/>

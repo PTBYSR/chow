@@ -27,6 +27,7 @@
     "firebase": "^9.17.2",
     "framer-motion": "^10.4.0",
     "hamburger-react": "^2.5.0",
+    "jotai": "^2.1.0",
     "lottie-react": "^2.4.0",
     "next": "^13.2.4",
     "next-seo": "^5.15.0",

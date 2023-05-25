@@ -5,7 +5,6 @@ import NavLink from './NavLink'
 
 const Nav = () => {
   const [nav, setNav] = useState(navUtils)
-  console.log(nav)
   return (
     <nav className='w-full mt-4'>
       {/* <ul className='flex center-all md:justify-between w-full flex-wrap'> */}
