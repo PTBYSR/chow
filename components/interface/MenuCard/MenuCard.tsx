@@ -9,9 +9,13 @@ const MenuCard = ({ label, items, variant = "left" }) => {
   return (
     <div
       className={clsx(
-        " mt-20 flex md:h-[700px] relative",
+        " mt-20 flex md:h-[500px] relative",
         variant === "left" && ["md:justify-start"],
-        variant === "right" && ["md:justify-end"]
+        variant === "right" && ["md:justify-end"],
+        label === "soups" && ["md:h-[150px]"],
+        label === "rice" && ["md:h-[300px]"],
+        label === "spagetti" && ["md:h-[150px]"],
+        label === "yam" && ["md:h-[250px]"],
       )}
     >
       <div
@@ -25,11 +29,11 @@ const MenuCard = ({ label, items, variant = "left" }) => {
         <div className="w-full">
           <MenuItems items={items} />
         </div>
-        <div className="overflow-hidden border md:flex hidden md:gap-12 absolute">
+        {/* <div className="overflow-hidden border md:flex hidden md:gap-12 absolute">
             {images?.map((img) => (
               <ImageCard img={img}/>
             ))}
-        </div>
+        </div> */}
       </div>
     </div>
   );

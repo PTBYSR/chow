@@ -2,13 +2,21 @@ import React, { useState } from "react";
 import Marquee from "react-fast-marquee";
 import { vidCarouselUtils } from "./VidCarousel.utils";
 import clsx from "clsx";
+import {useAtom} from 'jotai'
+import { loaderAtom } from "@/pages";
+
+
 
 const VidCarousel = () => {
+  // const [loader, setLoader] = useAtom(loaderAtom)
   const [items, setItems] = useState(vidCarouselUtils);
-  console.log(items);
+
+  const runLoader = () => {
+    // setLoader(false);
+  }
   return (
     <Marquee autoFill>
-      <div className="flex gap-5 mb-20 items-center mr-5">
+      <div className="flex relative gap-5 mb-20 items-center mr-5">
         <>
           <div className="rounded-3xl overflow-hidden">
             <video className="h-60" src="https://firebasestorage.googleapis.com/v0/b/chow-56e70.appspot.com/o/landing-1.mp4?alt=media&token=fcb74226-06cb-4d7c-81b2-02d4ee209883" loop autoPlay muted></video>
@@ -16,7 +24,7 @@ const VidCarousel = () => {
         </>
         <>
           <div className="rounded-3xl overflow-hidden">
-            <video className="h-[12rem]" src="https://firebasestorage.googleapis.com/v0/b/chow-56e70.appspot.com/o/landing-2.mp4?alt=media&token=f19bef65-4ca9-4ab3-896f-82b1492d6628" loop autoPlay muted></video>
+            <video onLoadedData={runLoader} className="h-[12rem]" src="https://firebasestorage.googleapis.com/v0/b/chow-56e70.appspot.com/o/landing-2.mp4?alt=media&token=f19bef65-4ca9-4ab3-896f-82b1492d6628" loop autoPlay muted></video>
           </div>
         </>
         <>

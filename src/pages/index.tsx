@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Meta } from "@/layouts/Meta";
 import { Main } from "@/templates/Main";
 import Text from "components/ui/Text/Text";
@@ -14,10 +14,27 @@ import TimeBadge from "components/icons/TimeBadge";
 import timeBadge from "../../public/time-badge.png";
 import Marquee from "react-fast-marquee";
 import VidCarousel from "components/interface/VidCarousel/VidCarousel";
-import wrapper from '../../public/wrapper.png'
+import wrapper from "../../public/wrapper.png";
+import { atom } from "jotai";
+import loaderImg from "../../public/logo.png";
+import clsx from "clsx";
 
+// export const loaderAtom = atom(true);
 
 const Index = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 4000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+
   return (
     <Main
       meta={
@@ -27,7 +44,37 @@ const Index = () => {
         />
       }
     >
-      
+      <div
+        className={clsx(
+          [
+            "w-screen h-screen bg-red flex center-all absolute top-0 left-0 z-[1000000]",
+          ],
+          [isLoading ? "" : "hidden"]
+        )}
+      >
+        <div className="animate-ping">
+          <Image src={loaderImg} width={50} height={50} />
+        </div>
+      </div>
+
+      <div className="md:hidden  absolute top-0 left-0 opacity fixed">
+        <Image src={wrapper} />
+        <Image src={wrapper} />
+        <Image src={wrapper} />
+        <Image src={wrapper} />
+        <Image src={wrapper} />
+        <Image src={wrapper} />
+        <Image src={wrapper} />
+        <Image src={wrapper} />
+        <Image src={wrapper} />
+        <Image src={wrapper} />
+        <Image src={wrapper} />
+        <Image src={wrapper} />
+        <Image src={wrapper} />
+        <Image src={wrapper} />
+        <Image src={wrapper} />
+        <Image src={wrapper} />
+      </div>
       <header className="md:mb-32 mb-28 flex md:flex-row flex-col">
         <div className="md:w-1/2 flex justify-center pt-16 relative">
           {/* <div className=" w-[450px] h-[520px] rounded-3xl">
@@ -62,7 +109,9 @@ const Index = () => {
       </header>
 
       <div className="relative z-[10000]">
-        <h2 className=" z-[1000] text-white text-2xl text-center mb-28">We bring you a rich menu of wholesome, exciting and tasty food </h2>
+        <h2 className=" z-[1000] text-white text-2xl text-center mb-28">
+          We bring you a rich menu of wholesome, exciting and tasty food{" "}
+        </h2>
         <VidCarousel />
       </div>
 

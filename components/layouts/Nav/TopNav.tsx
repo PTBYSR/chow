@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 const TopNav = () => {
   return (
-    <div id='nav' className='z-[1000] bg-red  flex flex-col  center-all w-full md:max-w-[940px]'>
+    <div id='nav' className='z-[1000]  flex flex-col  center-all w-full md:max-w-[940px]'>
     <div className='flex flex-col md:flex-row items-center mt-3 w-full'>
       <div className='px-12 mb-5 md:mb-0'><div className=''>
         <Image src={logo} width={80}/>
